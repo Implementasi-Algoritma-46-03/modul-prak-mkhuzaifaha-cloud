@@ -11,7 +11,7 @@ public class TP02 {
          int harga = scanner.nextInt();
        
        int total = harga * jumlah;
-         System.out.println("Hai, " + nama + ", Total belanja adalah " + total + " rupiah.");
+         System.out.println("Hai, " + nama + ". Total belanja adalah " + total + " rupiah.");
          scanner.close();
     }
 }
