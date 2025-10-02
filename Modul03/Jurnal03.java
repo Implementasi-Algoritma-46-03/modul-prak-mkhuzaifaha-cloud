@@ -11,8 +11,7 @@ public class Jurnal03 {
         double hasil = NA *0.25 + P * 0.35 + A * 0.40;
 
         boolean isLulus = hasil >= 75;
-               
-        System.out.printf("%.2f ", hasil);
+        System.out.printf("%.2f", hasil);
         System.out.println("\nLulus MK: " + isLulus);
     }
 }
