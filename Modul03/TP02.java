@@ -1,13 +1,17 @@
+
+import java.util.Scanner;
+
 public class TP02 {
 
     public static void main(final String[] args) {
-        // Declare and initializing variables
+        Scanner scanner = new Scanner(System.in);
 
-        //integral variable
-         String nama = "Dira."; 
-         String t = " rupiah";
-         int b = 5;
-         int c = 2000;
-         System.out.println("Hi, " + nama + " Total belanja adalah " + (b * c) + t);
+       String nama = scanner.next(); 
+       int jumlah = scanner.nextInt();
+         int harga = scanner.nextInt();
+       
+       int total = harga * jumlah;
+         System.out.println("Hai " + nama + ", Total belanja adalah " + total + " rupiah");
+         scanner.close();
     }
 }
