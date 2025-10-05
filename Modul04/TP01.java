@@ -1,6 +1,19 @@
+
+import java.util.Scanner;
+
 public class TP01 {
 
     public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan nilai A: ");
+        int A = sc.nextInt();
+        int x = A % 6;
+        if (x == 0) 
+            System.out.println("kelipatan enam");
+        else {
+            System.out.println("bukan kelipatan enam");
+        }
+        sc.close();
+
     }
 }
