@@ -5,7 +5,7 @@ public class TP01 {
 
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Masukkan nilai A: ");
+        
         int A = sc.nextInt();
         int x = A % 6;
         if (x == 0) 
