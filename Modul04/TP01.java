@@ -9,9 +9,9 @@ public class TP01 {
         int A = sc.nextInt();
         int x = A % 6;
         if (x == 0) 
-            System.out.println("kelipatan enam");
+            System.out.println("Kelipatan enam");
         else {
-            System.out.println("bukan kelipatan enam");
+            System.out.println("Bukan kelipatan enam");
         }
         sc.close();
 

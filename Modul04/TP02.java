@@ -14,7 +14,7 @@ public class TP02 {
 
         total -= diskon; 
         pajak = total * 0.11; 
-        totalBayar = total + pajak; 
+        totalBayar = (int)total + pajak; 
 
         System.out.println("Transaksi = " + transaksi);
         if (diskon > 0) {

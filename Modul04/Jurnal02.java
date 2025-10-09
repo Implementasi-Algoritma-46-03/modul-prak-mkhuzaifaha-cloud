@@ -16,12 +16,12 @@ public class Jurnal02 {
         }else if (nilaiN > 251){
             pajak = penghasilan1 * 0.25;
             statuspajak = "25%";
+         }else if (nilaiN > 51){
+            pajak = penghasilan1 * 0.15;
+            statuspajak = "15%";
         }else if (nilaiN > 0){
             pajak = penghasilan1 * 0.05;
             statuspajak = "5%";
-        }else if (nilaiN > 51){
-            pajak = penghasilan1 * 0.15;
-            statuspajak = "15%";
         
         
         }
