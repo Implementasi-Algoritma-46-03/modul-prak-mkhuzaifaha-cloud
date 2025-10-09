@@ -28,7 +28,7 @@ public class Jurnal02 {
         int jumlahpajak = (int) pajak;
         int penghasilanSetelahPajak = penghasilan1 - jumlahpajak;
 
-        System.out.println("Penghasilan kotor = " + nilaiN + " Juta Rupiah");
+        System.out.println("Penghasilan kotor = " + nilaiN + " juta Rupiah");
         System.out.println("Pajak " + statuspajak + " = Rp. " + jumlahpajak);
         System.out.println("Penghasilan bersih = Rp. " + penghasilanSetelahPajak);
         

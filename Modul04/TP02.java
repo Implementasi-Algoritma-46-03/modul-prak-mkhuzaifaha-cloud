@@ -3,7 +3,7 @@ public class TP02 {
     public static void main(final String[] args) {
         java.util.Scanner input = new java.util.Scanner(System.in);
         int transaksi = input.nextInt(); 
-        double total = transaksi; 
+        int total = transaksi; 
         double diskon = 0;
         double pajak, totalBayar;
 
@@ -13,8 +13,8 @@ public class TP02 {
         }
 
         total -= diskon; 
-        pajak = total * 0.11; 
-        totalBayar = (int)total + pajak; 
+        pajak = (int)total * 0.11; 
+        totalBayar =(int)total + pajak; 
 
         System.out.println("Transaksi = " + transaksi);
         if (diskon > 0) {
