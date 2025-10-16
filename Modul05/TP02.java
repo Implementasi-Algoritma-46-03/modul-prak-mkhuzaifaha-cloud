@@ -4,53 +4,23 @@ import java.util.Scanner;
 public class TP02 {
 
     public static void main(final String[] args) {
-      Scanner input = new Scanner(System.in);
-    //memunculkan Bulan
-    String bulan = input.nextLine();
-    String bulanPrancis;
-    switch (bulan) {
-        case "januari":
-            bulanPrancis = "janvier";
-            break;
-        case "februari":
-            bulanPrancis = "fevrier";
-            break;
-        case "maret":
-            bulanPrancis = "mars";
-            break; 
-        case "april":
-            bulanPrancis = "avril";
-            break;
-        case "mei":
-            bulanPrancis = "mai";
-            break;
-        case "juni":
-            bulanPrancis = "juin";
-            break;
-        case "juli":
-            bulanPrancis = "juillet";
-            break;
-        case "agustus":
-            bulanPrancis = "aout";
-            break;
-        case "september":
-            bulanPrancis = "septembre";
-            break;
-        case "oktober":
-            bulanPrancis = "oktobre";
-            break;
-        case "november":
-            bulanPrancis = "novembre";
-            break;
-        case "desember":
-            bulanPrancis = "decembre";
-            break;
-        default:
-            bulanPrancis = "bulan tidak valid";
-            break;
-    }
-    
-    System.out.println(bulanPrancis);
+      Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int hari = N % 7;
+        switch (hari) {
+        case 0 : System.out.println("vendredi");
+        break;
+        case 1 : System.out.println("samedi");
+        break;
+        case 2 : System.out.println("dimanche");
+        break;
+        case 3 : System.out.println("lundi"); 
+        break;
+        case 4 : System.out.println("mardi");
+        break;
+        case 5 : System.out.println("mercredi");
+        break;
+        case 6 : System.out.println("jeudi");
     }
 }
-
+}

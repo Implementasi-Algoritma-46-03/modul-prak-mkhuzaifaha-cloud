@@ -4,39 +4,52 @@ import java.util.Scanner;
 public class TP01 {
 
     public static void main(final String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        String A = sc.next();
-        switch (A) {
-
-            case "Januari" : System.out.println("janvier");
-            break; 
-            case "Februari" : System.out.println("fevrier");
-            break; 
-            case "Maret" : System.out.println("Mars");
+        Scanner input = new Scanner(System.in);
+    //memunculkan Bulan
+    String bulan = input.nextLine();
+    String bulanPrancis;
+    switch (bulan) {
+        case "januari":
+            bulanPrancis = "janvier";
             break;
-            case "April" : System.out.println ("arvil");
+        case "februari":
+            bulanPrancis = "fevrier";
             break;
-            case "Mei" : System.out.println("mai");
+        case "maret":
+            bulanPrancis = "mars";
             break;
-            case "Juni" : System.out.println("juin");    
-            break;  
-            case "Juli" : System.out.println("juillet");
-            break;  
-            case "Agustus" : System.out.println("aout");
+        case "april":
+            bulanPrancis = "avril";
             break;
-            case "September" : System.out.println("septembre"); 
-            break;  
-            case "Oktober" : System.out.println("octobre");    
-            break;  
-            
-            case "November" : System.out.println("novembre");
+        case "mei":
+            bulanPrancis = "mai";
             break;
-            
-            case "Desember" : System.out.println("decembre");    
+        case "juni":
+            bulanPrancis = "juin";
             break;
-            
-        
+        case "juli":
+            bulanPrancis = "juillet";
+            break;
+        case "agustus":
+            bulanPrancis = "aout";
+            break;
+        case "september":
+            bulanPrancis = "septembre";
+            break;
+        case "oktober":
+            bulanPrancis = "oktobre";
+            break;
+        case "november":
+            bulanPrancis = "novembre";
+            break;
+        case "desember":
+            bulanPrancis = "decembre";
+            break;
+        default:
+            bulanPrancis = "bulan tidak valid";
+            break;
     }
+    
+    System.out.println(bulanPrancis);
 }
 }

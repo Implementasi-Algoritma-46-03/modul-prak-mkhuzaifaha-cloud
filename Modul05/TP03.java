@@ -30,14 +30,11 @@ public class TP03 {
                 keliling = alas + tinggi + Math.sqrt(alas * alas + tinggi * tinggi);
                 System.out.print((int)luas+ " " +(int)keliling);
                 break;
-            case "Lingkaran":
-                int radius = sc.nextInt();
-                double phi = 3.14;
-                double r = radius / 2;
-                double luasLingkaran = phi * r * r;
-                double kelilingLingkaran = 2 * phi * r;
-                System.out.printf("%.2f %.2f",luasLingkaran, kelilingLingkaran);
-
+            case "lingkaran" :
+                int diameter = sc.nextInt();
+                luas = pi * (diameter / 2) * (diameter / 2);
+                keliling = pi * diameter;
+                System.out.printf("%.2f %.2f\n", luas, keliling);
                 break;
     }
 }
