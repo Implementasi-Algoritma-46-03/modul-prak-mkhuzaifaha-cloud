@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: Pasya Muhammad Rizky
+Nama: Mohammad Khuzaifah Al-Muttaqiin
 
-NIM : 607062500047
+NIM : 607062530003
 
 ## Instruksi
 

@@ -1,31 +1,24 @@
+
 import java.util.Scanner;
+
 public class TP03 {
 
     public static void main(final String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int nilaiDira = scanner.nextInt();
-        int nilaiRadi = scanner.nextInt();
-        int nilaiIdar = scanner.nextInt();
+        Scanner input = new Scanner(System.in);
 
-        if (nilaiDira > nilaiRadi && nilaiDira > nilaiIdar) {
+        System.out.print("Masukkan nilai Idar: ");
+      int D = input.nextInt(); // Nilai Dira
+        int R = input.nextInt(); // Nilai Radi
+        int I = input.nextInt(); // Nilai Idar
+
+        // Menentukan siapa yang paling tinggi nilainya
+        if (D > R && D > I) {
             System.out.println("Dira");
-        } else if (nilaiRadi > nilaiDira && nilaiRadi > nilaiIdar) {
+        } else if (R > D && R > I) {
             System.out.println("Radi");
         } else {
             System.out.println("Idar");
-        }
-
-        scanner.close();
-        Scanner s = new Scanner(System.in);
-        int d = s.nextInt();
-        int r = s.nextInt();
-        int i = s.nextInt();
-
-        if (d > r && d > i)
-            System.out.println("Dira");
-        else if (r > d && r > i)
-            System.out.println("Radi");
-        else
-            System.out.println("Idar");
+}
     }
 }
+
