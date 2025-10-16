@@ -8,6 +8,7 @@ public class TP01 {
         
         String A = sc.next();
         switch (A) {
+
             case "Januari" : System.out.println("janvier");
             break; 
             case "Februari" : System.out.println("fevrier");
@@ -28,8 +29,10 @@ public class TP01 {
             break;  
             case "Oktober" : System.out.println("octobre");    
             break;  
+            
             case "November" : System.out.println("novembre");
             break;
+            
             case "Desember" : System.out.println("decembre");    
             break;
             
