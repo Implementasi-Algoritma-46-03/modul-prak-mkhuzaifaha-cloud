@@ -4,62 +4,67 @@ public class Jurnal02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // Input nama hari dan bilangan bulat N
         String inputHari = scanner.nextLine().toLowerCase();
         int N = scanner.nextInt();
 
         int hari = 0;
         switch (inputHari) {
-            case "Senin":
+            case "senin":
+                hari = 0;
+                break;
+            case "selasa":
                 hari = 1;
                 break;
-            case "Selasa":
+            case "rabu":
                 hari = 2;
                 break;
-            case "Rabu":
+            case "kamis":
                 hari = 3;
                 break;
-            case "Kamis":
+            case "jumat":
                 hari = 4;
                 break;
-            case "Jumat":
+            case "sabtu":
                 hari = 5;
                 break;
-            case "Sabtu":
+            case "minggu":
                 hari = 6;
                 break;
-            case "Minggu":
-                hari = 7;
-                break;
+            default:
+                System.out.println("Nama hari tidak valid.");
+                return;
         }
 
+        // Hitung hari ke-N menggunakan modulus
         int hasil = (hari + N) % 7;
- 
+
         String hasilHari = "";
         switch (hasil) {
+            case 0:
+                hasilHari = "senin";
+                break;
             case 1:
-                hasilHari = "Senin";
+                hasilHari = "selasa";
                 break;
             case 2:
-                hasilHari = "Selasa";
+                hasilHari = "rabu";
                 break;
             case 3:
-                hasilHari = "Rabu";
+                hasilHari = "kamis";
                 break;
             case 4:
-                hasilHari = "Kamis";
+                hasilHari = "jumat";
                 break;
             case 5:
-                hasilHari = "Jum'at";
+                hasilHari = "sabtu";
                 break;
             case 6:
-                hasilHari = "Sabtu";
-                break;
-            case 7:
-                hasilHari = "Minggu";
+                hasilHari = "minggu";
                 break;
         }
 
-        System.out.println(hasilHari.toLowerCase());
+        System.out.println(hasilHari);
         scanner.close();
     }
 }
