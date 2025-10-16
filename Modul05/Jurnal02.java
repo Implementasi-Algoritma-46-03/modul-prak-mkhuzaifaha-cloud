@@ -9,25 +9,25 @@ public class Jurnal02 {
 
         int hari = 0;
         switch (inputHari) {
-            case "senin":
+            case "Senin":
                 hari = 1;
                 break;
-            case "selasa":
+            case "Selasa":
                 hari = 2;
                 break;
-            case "rabu":
+            case "Rabu":
                 hari = 3;
                 break;
-            case "kamis":
+            case "Kamis":
                 hari = 4;
                 break;
-            case "jumat":
+            case "Jumat":
                 hari = 5;
                 break;
-            case "sabtu":
+            case "Sabtu":
                 hari = 6;
                 break;
-            case "minggu":
+            case "Minggu":
                 hari = 7;
                 break;
         }
