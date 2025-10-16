@@ -2,69 +2,67 @@ import java.util.Scanner;
 
 public class Jurnal02 {
     public static void main(String[] args) {
+
+
         Scanner scanner = new Scanner(System.in);
+        String hari = scanner.nextLine(), hariTetap = "";
+        int tanggal = scanner.nextInt();
+        int tanggal2 = 0;
 
-        // Input nama hari dan bilangan bulat N
-        String inputHari = scanner.nextLine().toLowerCase();
-        int N = scanner.nextInt();
-
-        int hari = 0;
-        switch (inputHari) {
-            case "senin":
-                hari = 0;
+        switch (hari) {
+            case "Senin":
+                tanggal2 = 0;
                 break;
-            case "selasa":
-                hari = 1;
+            case "Selasa":
+                tanggal2 = 1;
                 break;
-            case "rabu":
-                hari = 2;
+            case "Rabu":
+                tanggal2 = 2;
                 break;
-            case "kamis":
-                hari = 3;
+            case "Kamis":
+                tanggal2 = 3;
                 break;
-            case "jumat":
-                hari = 4;
+            case "Jumat":
+                tanggal2 = 4;
                 break;
-            case "sabtu":
-                hari = 5;
+            case "Sabtu":
+                tanggal2 = 5;
                 break;
-            case "minggu":
-                hari = 6;
+            case "Minggu":
+                tanggal2 = 6;
                 break;
+        
             default:
-                System.out.println("Nama hari tidak valid.");
-                return;
+                break;
         }
 
-        // Hitung hari ke-N menggunakan modulus
-        int hasil = (hari + N) % 7;
-
-        String hasilHari = "";
-        switch (hasil) {
+        int a = (tanggal + tanggal2) % 7;
+        switch (a) {
             case 0:
-                hasilHari = "senin";
+                hariTetap = "Senin";
                 break;
             case 1:
-                hasilHari = "selasa";
+                hariTetap = "Selasa";
                 break;
             case 2:
-                hasilHari = "rabu";
+                hariTetap = "Rabu";
                 break;
             case 3:
-                hasilHari = "kamis";
+                hariTetap = "Kamis";
                 break;
             case 4:
-                hasilHari = "jumat";
+                hariTetap = "Jumat";
                 break;
             case 5:
-                hasilHari = "sabtu";
+                hariTetap = "Sabtu";
                 break;
             case 6:
-                hasilHari = "minggu";
+                hariTetap = "Minggu";
+                break;
+        
+            default:
                 break;
         }
-
-        System.out.println(hasilHari);
-        scanner.close();
+        System.out.println(hariTetap);
     }
 }
