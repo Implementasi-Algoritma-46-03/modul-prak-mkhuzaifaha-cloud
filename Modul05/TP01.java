@@ -10,7 +10,7 @@ public class TP01 {
         switch (A) {
             case "Januari" : System.out.println("janvier");
             break; 
-            case "Februari" : System.out.println("février");
+            case "Februari" : System.out.println("fevrier");
             break; 
             case "Maret" : System.out.println("Mars");
             break;
@@ -22,7 +22,7 @@ public class TP01 {
             break;  
             case "Juli" : System.out.println("juillet");
             break;  
-            case "Agustus" : System.out.println("août");
+            case "Agustus" : System.out.println("aout");
             break;
             case "September" : System.out.println("septembre");
             break;  
@@ -30,7 +30,7 @@ public class TP01 {
             break;  
             case "November" : System.out.println("novembre");
             break;
-            case "Desember" : System.out.println("décembre");    
+            case "Desember" : System.out.println("decembre");    
             break;
             
         
