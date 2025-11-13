@@ -13,7 +13,7 @@ public class Jurnal03 {
             if (prima == 2 ) 
                 hasil = "YA";
             else 
-                hasil = "TIDAK";
+                hasil = "BUKAN";
         }
         System.out.println(hasil);
     }
