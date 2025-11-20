@@ -7,7 +7,7 @@ public class Jurnal02 {
         for (int i = 1; i <= x; i++) {
 
             for(int j = 1; j <= x; j++) {
-                System.out.printf("%-4d" , i*j);
+                System.out.print(i*j + " ");
             }
             System.out.println();
         }
