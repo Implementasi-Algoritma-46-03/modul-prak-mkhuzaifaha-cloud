@@ -11,11 +11,12 @@ public class Jurnal01 {
 
             if (spasi < 5 || pola % 2 != 0){
                 System.out.print(" ");
-            }
-       }
+                }
+            }   
+            
        System.out.println();
+       }
     }
-}
 }
 
     
