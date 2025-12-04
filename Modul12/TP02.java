@@ -23,12 +23,19 @@ public class TP02 {
                 C[i][j] = A[i][j] + B[i][j];
             }
         }
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                System.out.print(C[i][j] + " ");
-            }
-            System.out.println();
+        for (int i = N - 1; i >= 0; i--) {
+    for (int j = 0; j < N; j++) {
+        if (j == N - 1) {
+            // elemen terakhir di baris -> tanpa spasi
+            System.out.print(C[i][j]);
+        } else {
+            // elemen selain terakhir -> dengan spasi
+            System.out.print(C[i][j] + " ");
         }
+    }
+    System.out.println();
+}
+
     }
 }
 

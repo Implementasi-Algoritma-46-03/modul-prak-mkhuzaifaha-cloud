@@ -23,12 +23,17 @@ public class Jurnal03 {
         x = nx;
         y = ny;
         }
-        for(int k = 0; k < N; k++) {
-        for (int j = 0; j < N; j++) {
-            System.out.print (spiral[k][j] + " ");
+       for (int i = N - 1; i >= 0; i--) {
+    for (int j = 0; j < N; j++) {
+        if (j == N - 1) {
+            // elemen terakhir di baris -> tanpa spasi
+            System.out.print(spiral[i][j]);
+        } else {
+            // elemen selain terakhir -> dengan spasi
+            System.out.print (spiral[i][j] + " ");
         }
-        System.out.println();
-
+    }
+    System.out.println();
         }
     }
 }
