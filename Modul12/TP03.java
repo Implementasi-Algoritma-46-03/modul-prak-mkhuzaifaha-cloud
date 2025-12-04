@@ -27,7 +27,7 @@ public class TP03 {
             }
         }
 
-        for (int i = N - 1; i >= 0; i--) {
+        for (int i = 0; i < N; i++) {
     for (int j = 0; j < N; j++) {
         if (j == N - 1) {
             // elemen terakhir di baris -> tanpa spasi
@@ -39,6 +39,5 @@ public class TP03 {
     }
     System.out.println();
 }
-
     }
 }
