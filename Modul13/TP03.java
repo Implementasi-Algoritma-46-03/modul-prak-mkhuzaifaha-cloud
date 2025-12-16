@@ -12,7 +12,7 @@ public class TP03 {
         }
         int target = sc.nextInt();
 
-        int hasil = lookForIt(array, target);
+        int hasil = cari(array, target);
 
         if (hasil != -1) {
             System.out.print("Ditemukan di indeks ke-" + hasil);
@@ -23,7 +23,7 @@ public class TP03 {
 
     }
 
-    public static int lookForIt(int[] array, int target) {
+    public static int cari(int[] array, int target) {
         int length = array.length;
         int hasil = 0;
         for (int i = 0; i < length; i++) {
