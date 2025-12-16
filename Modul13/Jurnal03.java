@@ -5,6 +5,7 @@ public class Jurnal03 {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
+        sc.nextLine();
         String[] barang = sc.nextLine().split(" ");
         String urutan = sc.nextLine();
 
